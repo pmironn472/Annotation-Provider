@@ -32,7 +32,7 @@ public class IsSingletonAnnotationProcess  extends AbstractProcessor{
 
 	        TypeElement IsSingleton = processingEnv.getElementUtils().getTypeElement("homeprovider.ca.IsSingleton");
 	        Set<? extends Element> classes = roundEnv.getElementsAnnotatedWith(IsSingleton);
-	         messenger = processingEnv.getMessager();
+	       
 	        for (Element e : classes) {
 	            boolean found = false;
 	            for (Element method : e.getEnclosedElements()) {
